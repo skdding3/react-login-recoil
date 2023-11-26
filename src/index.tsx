@@ -4,15 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RecoilRoot } from "recoil";
+import { ThemeProvider } from "@material-tailwind/react";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   // <React.StrictMode>
-  <RecoilRoot>
-    <App />
-  </RecoilRoot>
+  <ThemeProvider>
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
+  </ThemeProvider>
   // </React.StrictMode>
 );
 
